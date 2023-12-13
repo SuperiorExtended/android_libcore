@@ -32,9 +32,11 @@
 
 package test.java.util.regex;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
+import android.compat.Compatibility;
+import dalvik.annotation.compat.VersionCodes;
+import dalvik.system.VMRuntime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -50,8 +52,8 @@ import java.util.stream.Stream;
 import org.openjdk.testlib.java.util.stream.LambdaTestHelpers;
 import org.openjdk.testlib.java.util.stream.OpTestCase;
 import org.openjdk.testlib.java.util.stream.TestData;
-
-import static org.testng.Assert.*;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import static java.util.regex.Pattern.SPLIT_AS_STREAM_RETURNS_SINGLE_EMPTY_STRING;
 
